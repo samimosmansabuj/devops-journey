@@ -10,5 +10,9 @@ def index():
 def user_list():
     return "<p>User List</p>"
 
+@app.route("/class")
+def class_list():
+    return "<p>Class List</p>"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
