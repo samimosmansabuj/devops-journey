@@ -14,5 +14,9 @@ def user_list():
 def class_list():
     return "<p>Class List</p>"
 
+@app.route("/teacher")
+def teacher_list():
+    return "<p>Teacher List</p>"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
