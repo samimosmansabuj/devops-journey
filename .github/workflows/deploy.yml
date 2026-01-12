@@ -19,10 +19,10 @@ jobs:
         username: ${{ secrets.VM_USER }}
         key: ${{ secrets.VM_KEY }}
         script: |
-          cd /root
-          if [ ! -d "devops-journey" ]; then
+          # cd /root
+          if [ ! -d "devops-project" ]; then
             git clone https://github.com/samimosmansabuj/devops-journey.git
           fi
-          cd devops-journey
+          cd devops-project
           git pull
-          systemctl restart nginx
+          sudo systemctl restart nginx
