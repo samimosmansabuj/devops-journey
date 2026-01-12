@@ -26,3 +26,5 @@ jobs:
           cd devops-project
           git pull
           sudo systemctl restart nginx
+          sudo systemctl stop cdcd_flask_app
+          sudo systemctl start cdcd_flask_app
